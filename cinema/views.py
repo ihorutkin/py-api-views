@@ -89,7 +89,7 @@ class ActorDetail(
         return self.update(request, *args, **kwargs)
 
     def patch(self, request, *args, **kwargs):
-        kwargs['partial'] = True
+        kwargs["partial"] = True
         return self.partial_update(request, *args, **kwargs)
 
     def destroy(self, request, *args, **kwargs):
